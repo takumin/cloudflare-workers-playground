@@ -17,6 +17,18 @@ pre-commit:
       glob: "*.{toml}"
       run: taplo lint --no-auto-config --config taplo.toml {staged_files}
       stage_fixed: true
+    actionlint:
+      glob: ".github/**/*.{yml,yaml}"
+      run: actionlint {staged_files}
+      stage_fixed: true
+    ghalint-act:
+      glob: ".github/**/*.{yml,yaml}"
+      run: ghalint act
+      stage_fixed: true
+    ghalint-run:
+      glob: ".github/**/*.{yml,yaml}"
+      run: ghalint run
+      stage_fixed: true
 pre-push:
   commands:
     biome:
@@ -31,3 +43,12 @@ pre-push:
     taplo-lint:
       glob: "*.{toml}"
       run: taplo lint --no-auto-config --config taplo.toml {staged_files}
+    actionlint:
+      glob: ".github/**/*.{yml,yaml}"
+      run: actionlint {staged_files}
+    ghalint-act:
+      glob: ".github/**/*.{yml,yaml}"
+      run: ghalint act
+    ghalint-run:
+      glob: ".github/**/*.{yml,yaml}"
+      run: ghalint run
