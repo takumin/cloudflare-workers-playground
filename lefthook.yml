@@ -1,6 +1,9 @@
 ---
 pre-commit:
   commands:
+    editorconfig-checker:
+      run: editorconfig-checker
+      stage_fixed: true
     biome:
       glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
       run: biome check --write --no-errors-on-unmatched --config-path=biome.json {staged_files}
@@ -31,6 +34,8 @@ pre-commit:
       stage_fixed: true
 pre-push:
   commands:
+    editorconfig-checker:
+      run: editorconfig-checker
     biome:
       glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
       run: biome check --no-errors-on-unmatched --config-path=biome.json {push_files}
