@@ -1,0 +1,25 @@
+---
+name: CI
+on:
+  push:
+permissions:
+  contents: read
+jobs:
+  ci:
+    name: CI
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+    - name: Checkout
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+    - name: Setup Aqua
+      uses: aquaproj/aqua-installer@f13c5d2f0357708d85477aabe50fd3f725528745 # v3.1.0
+      with:
+        aqua_version: v2.38.2
+        aqua_opts: -a
+    - name: Setup Node.js
+      run: pnpm install --frozen-lockfile
+    - name: Running Lint
+      run: pnpm run lint
+    - name: Running Test
+      run: pnpm run test
