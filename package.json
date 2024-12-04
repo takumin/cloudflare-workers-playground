@@ -8,10 +8,10 @@
 		"pnpm": "9.14.4"
 	},
 	"scripts": {
-		"preinstall": "pnpm run preinstall:aqua && pnpm run preinstall:pnpm",
+		"preinstall": "pnpm run preinstall:aqua && pnpm run preinstall:hook && pnpm run preinstall:pnpm",
 		"preinstall:aqua": "aqua install --all",
+		"preinstall:hook": "lefthook install",
 		"preinstall:pnpm": "npx only-allow pnpm",
-		"postinstall": "lefthook install",
 		"fmt": "biome check --write",
 		"lint": "biome check --write",
 		"test": "vitest",
