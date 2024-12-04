@@ -15,7 +15,10 @@ space_redirects    = true
 binary_next_line   = true
 function_next_line = true
 
-[*.yml]
+[*.{yaml,yml}]
+indent_style = space
+
+[*.toml]
 indent_style = space
 
 [{LICENSE,*.md}]
