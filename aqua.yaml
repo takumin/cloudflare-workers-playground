@@ -1,0 +1,19 @@
+---
+# aqua - Declarative CLI Version Manager
+# https://aquaproj.github.io/
+# checksum:
+#   enabled: true
+#   require_checksum: true
+#   supported_envs:
+#   - all
+registries:
+- type: standard
+  ref: v4.267.0 # renovate: depName=aquaproj/aqua-registry
+packages:
+- name: nodejs/node
+  version: v22.12.0
+- name: pnpm/pnpm@v9.14.4
+- name: biomejs/biome@cli/v1.9.4
+- name: google/yamlfmt@v0.14.0
+- name: tamasfe/taplo@0.9.3
+- name: evilmartians/lefthook@v1.8.5
