@@ -8,5 +8,11 @@
 	"automerge": true,
 	"lockFileMaintenance": {
 		"enabled": true
-	}
+	},
+	"packageRules": [
+		{
+			"groupName": "pnpm",
+			"matchPackageNames": ["pnpm", "pnpm/pnpm"]
+		}
+	]
 }
