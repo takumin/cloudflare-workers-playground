@@ -11,6 +11,10 @@
 	},
 	"packageRules": [
 		{
+			"groupName": "node",
+			"matchPackageNames": ["node", "nodejs/node"]
+		},
+		{
 			"groupName": "pnpm",
 			"matchPackageNames": ["pnpm", "pnpm/pnpm"]
 		}
