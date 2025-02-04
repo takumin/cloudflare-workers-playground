@@ -2,10 +2,10 @@
 	"name": "cloudflare-workers-playground",
 	"version": "0.0.0",
 	"private": true,
-	"packageManager": "pnpm@9.15.5",
+	"packageManager": "pnpm@10.2.0",
 	"engines": {
 		"node": "22.12.0",
-		"pnpm": "9.15.5"
+		"pnpm": "10.2.0"
 	},
 	"scripts": {
 		"preinstall": "pnpm run preinstall:aqua && pnpm run preinstall:hook && pnpm run preinstall:pnpm",
