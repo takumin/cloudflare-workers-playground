@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@cloudflare/vitest-pool-workers':
-        specifier: 0.6.13
-        version: 0.6.13(@cloudflare/workers-types@4.20250204.0)(@vitest/runner@2.1.9)(@vitest/snapshot@2.1.9)(vitest@2.1.9)
+        specifier: 0.6.14
+        version: 0.6.14(@cloudflare/workers-types@4.20250204.0)(@vitest/runner@2.1.9)(@vitest/snapshot@2.1.9)(vitest@2.1.9)
       '@cloudflare/workers-types':
         specifier: 4.20250204.0
         version: 4.20250204.0
@@ -30,8 +30,8 @@ packages:
     resolution: {integrity: sha512-YLPHc8yASwjNkmcDMQMY35yiWjoKAKnhUbPRszBRS0YgH+IXtsMp61j+yTcnCE3oO2DgP0U3iejLC8FTtKDC8Q==}
     engines: {node: '>=16.13'}
 
-  '@cloudflare/vitest-pool-workers@0.6.13':
-    resolution: {integrity: sha512-+pwwmmSVvHAsZwvNWuBW6sNYB0uBYRkAuY0lU9WFrhqytsnF7c9oCh3ryxUOx6yxkmaQvAScKJcHU32U7o3rsQ==}
+  '@cloudflare/vitest-pool-workers@0.6.14':
+    resolution: {integrity: sha512-4e3T9iTLOUDwX0bwY+mOFhkZ4Zpps1/l9Q7pmb45sxXywv9phGncMF8hRyULf5l8eqvO8ZDN+2XkVCIEbFyxbw==}
     peerDependencies:
       '@vitest/runner': 2.0.x - 2.1.x
       '@vitest/snapshot': 2.0.x - 2.1.x
@@ -1015,8 +1015,8 @@ packages:
       '@cloudflare/workers-types':
         optional: true
 
-  wrangler@3.108.0:
-    resolution: {integrity: sha512-w8J0VtDqn8F94qw+HnxFbri7MMdT/to5/w1QHAjR//tIHkilKAUFNaEF3GDEJREvUG3iHuawrH2p5ATTHnFc/Q==}
+  wrangler@3.108.1:
+    resolution: {integrity: sha512-SuiMv/ys52Cu7r6CVRXJT/GvneXHoB0ef5nGBWghSWyHxUSIm4KavGO6F/hTphn+WmSpHYQt3xNl5hdxk6rJlA==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -1055,7 +1055,7 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@cloudflare/vitest-pool-workers@0.6.13(@cloudflare/workers-types@4.20250204.0)(@vitest/runner@2.1.9)(@vitest/snapshot@2.1.9)(vitest@2.1.9)':
+  '@cloudflare/vitest-pool-workers@0.6.14(@cloudflare/workers-types@4.20250204.0)(@vitest/runner@2.1.9)(@vitest/snapshot@2.1.9)(vitest@2.1.9)':
     dependencies:
       '@vitest/runner': 2.1.9
       '@vitest/snapshot': 2.1.9
@@ -1066,7 +1066,7 @@ snapshots:
       miniflare: 3.20250204.0
       semver: 7.7.1
       vitest: 2.1.9
-      wrangler: 3.108.0(@cloudflare/workers-types@4.20250204.0)
+      wrangler: 3.108.1(@cloudflare/workers-types@4.20250204.0)
       zod: 3.24.1
     transitivePeerDependencies:
       - '@cloudflare/workers-types'
@@ -1899,7 +1899,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  wrangler@3.108.0(@cloudflare/workers-types@4.20250204.0):
+  wrangler@3.108.1(@cloudflare/workers-types@4.20250204.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
