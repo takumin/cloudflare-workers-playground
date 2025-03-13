@@ -29,7 +29,6 @@
 		"wrangler": "4.0.0"
 	},
 	"pnpm": {
-		"ignoredBuiltDependencies": ["esbuild", "workerd"],
-		"onlyBuiltDependencies": ["esbuild", "workerd"]
+		"onlyBuiltDependencies": ["esbuild", "sharp", "workerd"]
 	}
 }
