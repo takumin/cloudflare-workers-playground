@@ -12,7 +12,8 @@
 	"packageRules": [
 		{
 			"groupName": "node",
-			"matchPackageNames": ["node", "nodejs/node"]
+			"matchPackageNames": ["node", "nodejs/node"],
+			"versioning": "node"
 		},
 		{
 			"groupName": "pnpm",
