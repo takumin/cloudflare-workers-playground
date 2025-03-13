@@ -27,5 +27,9 @@
 		"typescript": "5.8.2",
 		"vitest": "3.0.8",
 		"wrangler": "4.0.0"
+	},
+	"pnpm": {
+		"ignoredBuiltDependencies": ["esbuild", "workerd"],
+		"onlyBuiltDependencies": ["esbuild", "workerd"]
 	}
 }
