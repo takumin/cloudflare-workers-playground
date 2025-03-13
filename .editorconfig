@@ -24,8 +24,5 @@ indent_style = space
 [{LICENSE,*.md}]
 indent_style = unset
 
-[bun.lockb]
-end_of_line              = unset
-indent_style             = unset
-insert_final_newline     = unset
-trim_trailing_whitespace = unset
+[worker-configuration.d.ts]
+indent_style = unset
