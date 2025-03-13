@@ -44,13 +44,13 @@ pre-push:
       run: yamlfmt -lint -no_global_conf -conf yamlfmt.yml {push_files}
     taplo-format:
       glob: "*.{toml}"
-      run: taplo format --check --no-auto-config --config taplo.toml {staged_files}
+      run: taplo format --check --no-auto-config --config taplo.toml {push_files}
     taplo-lint:
       glob: "*.{toml}"
-      run: taplo lint --no-auto-config --config taplo.toml {staged_files}
+      run: taplo lint --no-auto-config --config taplo.toml {push_files}
     actionlint:
       glob: ".github/**/*.{yml,yaml}"
-      run: actionlint {staged_files}
+      run: actionlint {push_files}
     ghalint-act:
       glob: ".github/**/*.{yml,yaml}"
       run: ghalint act
