@@ -21,7 +21,7 @@ pre-commit:
       run: taplo lint --no-auto-config --config taplo.toml {staged_files}
       stage_fixed: true
     actionlint:
-      glob: ".github/**/*.{yml,yaml}"
+      glob: ".github/workflows/*.{yml,yaml}"
       run: actionlint {staged_files}
       stage_fixed: true
     ghalint-act:
@@ -49,7 +49,7 @@ pre-push:
       glob: "*.{toml}"
       run: taplo lint --no-auto-config --config taplo.toml {push_files}
     actionlint:
-      glob: ".github/**/*.{yml,yaml}"
+      glob: ".github/workflows/*.{yml,yaml}"
       run: actionlint {push_files}
     ghalint-act:
       glob: ".github/**/*.{yml,yaml}"
