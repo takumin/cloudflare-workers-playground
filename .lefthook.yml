@@ -14,11 +14,11 @@ pre-commit:
       stage_fixed: true
     taplo-format:
       glob: "*.{toml}"
-      run: taplo format --no-auto-config --config taplo.toml {staged_files}
+      run: taplo format --no-auto-config --config .taplo.toml {staged_files}
       stage_fixed: true
     taplo-lint:
       glob: "*.{toml}"
-      run: taplo lint --no-auto-config --config taplo.toml {staged_files}
+      run: taplo lint --no-auto-config --config .taplo.toml {staged_files}
       stage_fixed: true
     actionlint:
       glob: ".github/workflows/*.{yml,yaml}"
@@ -44,10 +44,10 @@ pre-push:
       run: yamlfmt -lint -no_global_conf -conf yamlfmt.yml {push_files}
     taplo-format:
       glob: "*.{toml}"
-      run: taplo format --check --no-auto-config --config taplo.toml {push_files}
+      run: taplo format --check --no-auto-config --config .taplo.toml {push_files}
     taplo-lint:
       glob: "*.{toml}"
-      run: taplo lint --no-auto-config --config taplo.toml {push_files}
+      run: taplo lint --no-auto-config --config .taplo.toml {push_files}
     actionlint:
       glob: ".github/workflows/*.{yml,yaml}"
       run: actionlint {push_files}
