@@ -21,3 +21,4 @@ packages:
 - name: suzuki-shunsuke/ghalint@v1.2.3
 - name: suzuki-shunsuke/pinact@v1.2.2
 - name: editorconfig-checker/editorconfig-checker@v3.2.1
+- name: oxc-project/oxc/oxlint@oxlint_v0.16.0
