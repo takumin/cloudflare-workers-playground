@@ -2,16 +2,18 @@
 	"name": "cloudflare-workers-playground",
 	"version": "0.0.0",
 	"private": true,
+	"license": "Apache-2.0",
 	"packageManager": "pnpm@10.6.3",
 	"engines": {
 		"node": "22.14.0",
-		"pnpm": "10.6.3"
+		"pnpm": "10.6.3",
+		"npm": "USE_PNPM"
 	},
 	"scripts": {
 		"preinstall": "pnpm run preinstall:aqua && pnpm run preinstall:hook && pnpm run preinstall:pnpm",
 		"preinstall:aqua": "aqua install --all",
 		"preinstall:hook": "lefthook install",
-		"preinstall:pnpm": "npx only-allow pnpm",
+		"preinstall:pnpm": "npx -y only-allow pnpm",
 		"fmt": "biome check --write",
 		"lint": "pnpm run lint:biome && pnpm run lint:oxlint",
 		"lint:biome": "biome check --write",
